@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Delights - Repostería y Pedidos</title>
+    <style>
+        :root {
+            --primary-color: #ff85a2;
+            --secondary-color: #f72585;
+            --accent-color: #25d366;
+            --bg-color: #fff0f5;
+            --text-color: #4a4a4a;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #ffffff;
+            width: 100%;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            color: var(--secondary-color);
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        p.subtitle {
+            font-size: 1.1rem;
+            color: #777;
+            margin-top: 0.5rem;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 90%;
+            margin: 3rem auto;
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        .contact-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 0.9rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        .btn-instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+
+        .btn-whatsapp {
+            background-color: var(--accent-color);
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 1.5rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sweet Delights</h1>
+        <p class="subtitle">Endulzando tus momentos especiales</p>
+    </header>
+
+    <main class="container">
+        <h2>¡Haz tu pedido con nosotros!</h2>
+        <p>Visita nuestras redes sociales o escríbenos directamente a nuestro WhatsApp para realizar tu pedido o pedir información.</p>
+
+        <div class="contact-section">
+            <!-- Botón Instagram -->
+            <a href="https://www.instagram.com/sweet.delights0_?stkn=MTFjYnlnbWl2bDB1bA==" target="_blank" rel="noopener noreferrer" class="btn btn-instagram">
+                📷 Síguenos en Instagram
+            </a>
+
+            <!-- Botón WhatsApp para Pedidos -->
+            <a href="https://wa.me/573165158108?text=Hola,%20quisiera%20realizar%20un%20pedido" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                💬 Haz tu pedido: 316 515 8108
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        &copy; Sweet Delights - Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>
